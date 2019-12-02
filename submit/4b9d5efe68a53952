@@ -1,0 +1,6 @@
+: 1
+name: nocontracts
+version: 0.2.0
+summary: Assertion macros library for C++, useful while contracts are not\
+ part of the language yet.
+license: proprietary
