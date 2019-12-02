@@ -1,0 +1,16 @@
+
+
+: fail only when expected
+$* >>EOO 2>>~/EOE/
+===== IGNORE ASSERTIONS LOGS - BEGIN ====
+--debugbreak--
+--debugbreak--
+--debugbreak--
+===== IGNORE ASSERTIONS LOGS - END ====
+ -> None of the disabled assertions were checked- As expected.
+ -> All checks for assertions passed.
+EOO
+/Assertion Failed .*/
+/Assertion Failed .*/
+/Assertion Failed .*/
+EOE

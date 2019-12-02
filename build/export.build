@@ -1,0 +1,6 @@
+$out_root/
+{
+  include nocontracts/
+}
+
+export $out_root/nocontracts/$import.target

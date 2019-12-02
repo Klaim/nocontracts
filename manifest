@@ -1,0 +1,12 @@
+: 1
+name: nocontracts
+version: 0.1.3-a.0.z
+summary: Assertion macros library for C++, useful while contracts are not part of the language yet.
+license: proprietary
+description-file: README.md
+url: https://github.com/klaim/nocontracts
+email: mjklaim@gmail.com
+depends: * build2 >= 0.12.0
+depends: * bpkg >= 0.12.0
+
+
