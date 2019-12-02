@@ -1,8 +1,8 @@
 #undef NOCONTRACTS_CHECKS_ENABLED
 #define NOCONTRACTS_CHECKS_ENABLED 0 // Disable assertion checks
 
-#include <nocontracts/assert.hxx>
-#include "driver.hxx"
+#include <nocontracts/assert.hpp>
+#include "driver.hpp"
 
 #if NOCONTRACTS_CHECKS_ENABLED == 1
 #  error WTF

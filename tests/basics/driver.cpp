@@ -2,8 +2,8 @@
 #define NOCONTRACTS_ABORT() myabort();
 #define NOCONTRACTS_DEBUGBREAK() printf("--debugbreak--\n");
 
-#include <nocontracts/version.hxx>
-#include "driver.hxx"
+#include <nocontracts/version.hpp>
+#include "driver.hpp"
 
 int abort_count = 0;
 

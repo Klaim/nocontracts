@@ -5,7 +5,7 @@
 // Do not add macros here, we must check the default config.
 
 
-#include <nocontracts/assert.hxx>
+#include <nocontracts/assert.hpp>
 
 void do_not_call()
 {

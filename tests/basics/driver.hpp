@@ -1,5 +1,5 @@
 #pragma once
-#include <nocontracts/assert.hxx>
+#include <nocontracts/assert.hpp>
 
 extern int abort_count;
 void myabort();
