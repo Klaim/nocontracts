@@ -1,7 +1,8 @@
 #pragma once
 #include <cstdio>
 #include <cstdlib>
-#include <signal.h>
+#include <csignal>
+
 
 ///////////////////////////////////////////////////////////////////
 // Possible bits used to compose the behavior:
@@ -12,14 +13,14 @@
 
 #ifndef NOCONTRACTS_ABORT
 # define NOCONTRACTS_ABORT() \
-    abort();
+    std::abort();
 #endif
 
 #ifndef NOCONTRACTS_DEBUGBREAK
 # ifdef _WIN32
 #   define NOCONTRACTS_DEBUGBREAK() __debugbreak();
 # else
-#   define NOCONTRACTS_DEBUGBREAK() raise(SIGTRAP);
+#   define NOCONTRACTS_DEBUGBREAK() std::raise(SIGTRAP);
 # endif
 #endif
 
