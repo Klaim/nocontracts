@@ -69,6 +69,12 @@
     std::abort()
 #endif
 
+// User specifies to just continue instead of abort on failure.
+#if defined(NOCONTRACTS_CONTINUE_ON_FAILURE) and NOCONTRACTS_CONTINUE_ON_FAILURE == 1
+# undef NOCONTRACTS_ABORT
+# define NOCONTRACTS_ABORT
+#endif
+
 #ifndef NOCONTRACTS_DEBUGBREAK
 # ifdef _WIN32
 #   define NOCONTRACTS_DEBUGBREAK() __debugbreak();
@@ -81,6 +87,7 @@
 // Default behavior:
 
 #define NOCONTRACTS_DEFAULT_CHECKS_ENABLED 1
+#define NOCONTRACTS_DEFAULT_ABORT_ON_FAILURE 1
 
 #define NOCONTRACTS_DEFAULT_ON_FAILURE( expr__, message__ ) \
   NOCONTRACTS_LOG_FAILURE( expr__, message__ ); \
