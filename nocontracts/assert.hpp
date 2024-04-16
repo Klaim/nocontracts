@@ -35,7 +35,7 @@
 #  endif
 #endif
 
-// user specified to not use either std::format or std::print but C's formatting
+// user specified to use neither std::format nor std::print, but C's formatting
 #if defined(NOCONTRACTS_USE_CFORMAT) && NOCONTRACTS_USE_CFORMAT == 1
 # ifdef NOCONTRACTS_USE_STD_FORMAT
 #   undef NOCONTRACTS_USE_STD_FORMAT
