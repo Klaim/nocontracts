@@ -1,7 +1,7 @@
 : 1
 name: nocontracts
-version: 0.2.1-a.0.z
-summary: Assertion macros library for C++, useful while contracts are not part of the language yet.
+version: 0.3.0-a.0.z
+summary: Assertion macros library for C++, useful while contracts are not part of the language yet
 license: BSL-1.0 ; Boost Software License 1.0
 description-file: README.md
 url: https://github.com/klaim/nocontracts
