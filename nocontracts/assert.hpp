@@ -55,7 +55,7 @@
 #   include <format>
 #   include <cstdio>
 #   define NOCONTRACTS_LOG_FAILURE( expr__, message__ ) \
-      fprintf(stderr, ::std::format("Assertion Failed ({}:{}): {} - ({} is wrong)\n", __FILE__, __LINE__, message__, #expr__ ).c_str())
+      ::fprintf(stderr, ::std::format("Assertion Failed ({}:{}): {} - ({} is wrong)\n", __FILE__, __LINE__, message__, #expr__ ).c_str())
 # else
 #   include <cstdlib>
 #   include <cstdio>
